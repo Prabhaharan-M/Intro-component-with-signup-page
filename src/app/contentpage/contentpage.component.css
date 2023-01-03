@@ -1,0 +1,150 @@
+.body{
+    background: #333;
+    padding-top: 100px;
+    background-image: url("../../assets/images/bg2.jpg");
+    background-position: fixed;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+.container h1 {
+    justify-content: center;
+    color: #39ff14;
+    display: block;
+    text-transform: uppercase;
+    font-family: cooper;
+    
+
+}
+
+.card-container {
+    padding: 50px 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+
+    flex-wrap: wrap;
+}
+
+
+
+.card {
+    height: 15rem;
+    width: 15rem;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    transition: all .5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+
+
+}
+
+.img-container {
+    height: 300px;
+    width: 200px;
+    object-fit: cover;
+
+}
+
+.pic {
+    height: 100%;
+    width: 100%;
+    transition: all .5s ease-in-out;
+    margin-top: -1.2rem;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+
+}
+
+.card-container:hover .card {
+    flex-wrap: nowrap;
+
+
+
+}
+
+.card:hover {
+    width: 20rem;
+    gap: 2rem;
+    transition: all .5s ease-in-out;
+}
+
+.card:hover .pic {
+    transform: translate(120px, -50px);
+    height: 350px;
+
+    transition: all .5s ease-in-out;
+}
+
+
+.content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.8rem;
+    visibility: hidden;
+    margin-left: 0.8rem;
+
+}
+
+
+.content1 {
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+
+    transition: all .5s ease-in-out;
+}
+
+.content2 {
+    font-size: 1rem;
+
+    width: 50%;
+    transition: all .5s ease-in-out;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    padding: 7px 10px;
+    border-radius: 5px;
+    margin-left: 0.8rem;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all .5s ease-in-out;
+    margin-top: 10px;
+
+}
+
+.btn a {
+    color: white;
+}
+
+.btn:hover {
+    background-color: transparent;
+    border: 3px solid black;
+    color: black;
+    font-weight: 600;
+}
+
+.card:hover .content {
+    visibility: visible;
+}
+
